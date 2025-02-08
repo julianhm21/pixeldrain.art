@@ -3,47 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproductor de Video</title>
+    <title>Video</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
-        }
-
-        video {
-            width: 90%;
-            max-width: 320px;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .telegram-button {
-            display: inline-block;
-            margin-bottom: 10px;
-            padding: 10px 20px;
-            background-color: #0088cc;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        .telegram-button:hover {
-            background-color: #0077b6;
-        }
+        body { margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; background: #f0f0f0; }
+        video { width: 90%; max-width: 320px; border-radius: 8px; }
+        .btn { display: flex; align-items: center; gap: 8px; margin: 10px; padding: 10px 20px; background: #ff0000; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .btn:hover { background: #cc0000; }
+        .icon { width: 20px; height: 20px; }
     </style>
 </head>
 <body>
-    <a href="https://t.me/picositap0sting" class="telegram-button" target="_blank">Únete para más videos</a>
-    <video controls autoplay muted>
+    <a href="https://t.me/picositap0sting" class="btn" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="icon">
+        ÚNETE AQUÍ PARA MÁS VIDEOS 🔞🔥
+    </a>
+    <video autoplay muted playsinline webkit-playsinline controls onended="window.location.href='https://t.me/picositap0sting'">
         <source src="https://cdn.videy.co/SMudlsRQ1.mp4" type="video/mp4">
-        Tu navegador no soporta la reproducción de videos.
     </video>
 </body>
 </html>
